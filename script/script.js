@@ -9,8 +9,12 @@
 // 1. PREPARAZIONE E ACQUISIZIONE DEI DATI
 
 // Chiedere all'utente i chilometri da percorrere
-// Chiedere all'utente la usa età
+const chilometriUtente = parseInt(prompt('Inserire il numero di chilometri da percorrere')) // number
+console.log(chilometriUtente)
 
+// Chiedere all'utente la usa età
+const etàUtente = parseInt(prompt('Inserire l\'età')) // number
+console.log(etàUtente)
 
 // 2. ESECUZIONE DELLA LOGICA / ALGORITMO
 
