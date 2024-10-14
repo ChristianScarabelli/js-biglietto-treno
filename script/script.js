@@ -10,17 +10,27 @@
 
 // Chiedere all'utente i chilometri da percorrere
 const chilometriUtente = parseInt(prompt('Inserire il numero di chilometri da percorrere')) // number
-console.log(chilometriUtente)
+console.log('chilometri da percorrere:' , chilometriUtente)
 
 // Chiedere all'utente la usa età
 const etàUtente = parseInt(prompt('Inserire l\'età')) // number
-console.log(etàUtente)
+console.log('età:', etàUtente)
 
 // 2. ESECUZIONE DELLA LOGICA / ALGORITMO
 
 // Prezzo base 0.21 € al Km
+const prezzoBase = chilometriUtente * 0.21 // number 
+console.log('prezzo base:', prezzoBase)
+
+let prezzoFinale = ''
 
 // SE l'utente < 18 anni si applica lo sconto del 20%
 // ALTRIMENTI SE l'utente è > 18 anni E over 65 si applica lo sconto del 40%
+if (etàUtente < 18) {
+    prezzoFinale = prezzoBase - (prezzoBase * 20 / 100)  // number
+    console.log('è stato applicato uno sconto del 20%!')
+}
+
 
 // 3. OUTPUT
+console.log(prezzoFinale)
