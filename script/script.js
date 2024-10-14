@@ -27,14 +27,17 @@ let prezzoFinale = ''
 // SE l'utente < 18 anni si applica lo sconto del 20%
 // ALTRIMENTI SE l'utente è over 65 si applica lo sconto del 40%
 if (etàUtente < 18) {
-    prezzoFinale = prezzoBase - (prezzoBase * 20 / 100)  // number
+    prezzoFinale = (prezzoBase - (prezzoBase * 20 / 100))  // number
     console.log('è stato applicato uno sconto del 20%!')
 } else if (etàUtente > 65) {
-    prezzoFinale = prezzoBase - (prezzoBase * 40 / 100)  // number
+    prezzoFinale = (prezzoBase - (prezzoBase * 40 / 100))  // number
     console.log('è stato applicato uno sconto del 40%!')
-}  else
-    prezzoFinale = prezzoBase
+}  else {
+    prezzoFinale = prezzoBase. // number
     console.log('Spiacenti, ma non è stato applicato alcuno sconto')
+}
 
 // 3. OUTPUT
-console.log(prezzoFinale)
+console.log.(prezzoFinale)  // number
+
+// .toFixed(2)
