@@ -33,11 +33,11 @@ if (etàUtente < 18) {
     prezzoFinale = (prezzoBase - (prezzoBase * 40 / 100))  // number
     console.log('è stato applicato uno sconto del 40%!')
 }  else {
-    prezzoFinale = prezzoBase. // number
+    prezzoFinale = prezzoBase // number
     console.log('Spiacenti, ma non è stato applicato alcuno sconto')
 }
 
 // 3. OUTPUT
-console.log.(prezzoFinale)  // number
+console.log(prezzoFinale + " €")  // number
 
 // .toFixed(2)
